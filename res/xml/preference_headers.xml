@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <header
+        android:fragment="com.example.arduinotrial.PrefsFragment"
+        android:title="Arduino Controls (pins, reward time, etc)" >
+        <extra
+            android:name="resource"
+            android:value="preferences" />
+    </header>
+    <header
+        android:fragment="com.example.arduinotrial.PrefsFragment2"
+        android:title="Tablet Controls (number of boxes, timeout length, etc)" >
+        <extra
+            android:name="resource"
+            android:value="preferences2" />
+    </header>
+
+</preference-headers>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000" >
+    
+     <Button
+        android:id="@+id/stage3but1"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:onClick="stage3Response"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_alignParentBottom = "true"
+        android:layout_alignParentLeft = "true"
+        />
+    
+     <Button
+        android:id="@+id/stage3but2"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:onClick="stage3Response"
+        android:layout_marginRight="25dp"
+        android:layout_alignParentBottom = "true"
+        android:layout_toRightOf = "@id/stage3but1"
+        />
+     <Button
+        android:id="@+id/stage3but3"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:onClick="stage3Response"
+        android:layout_marginRight="25dp"
+        android:layout_alignParentBottom = "true"
+        android:layout_toRightOf = "@id/stage3but2"
+        />
+     <Button
+        android:id="@+id/stage3but4"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:onClick="stage3Response"
+        android:layout_marginRight="25dp"
+        android:layout_alignParentBottom = "true"
+        android:layout_toRightOf = "@id/stage3but3"
+        />
+     <Button
+        android:id="@+id/stage3but5"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:onClick="stage3Response"
+        android:layout_marginRight="25dp"
+        android:layout_alignParentBottom = "true"
+        android:layout_toRightOf = "@id/stage3but4"
+        />
+        <Button
+        android:id="@+id/stage3but6"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:onClick="stage3Response"
+        android:layout_marginRight="25dp"        
+		android:layout_alignParentBottom = "true"
+		android:layout_toRightOf = "@id/stage3but5"
+        />
+        <Button
+        android:id="@+id/stage3but7"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:onClick="stage3Response"
+        android:layout_alignParentBottom = "true"
+        android:layout_toRightOf = "@id/stage3but6"
+        />
+        
+        <Button
+        android:id="@+id/stopvideo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop = "true"  
+        android:layout_alignParentRight = "true" />
+
+<SurfaceView 
+	android:id="@+id/surfaceView" 
+	android:layout_width="1dp" 
+	android:layout_height="1dp">
+</SurfaceView>
+</RelativeLayout>

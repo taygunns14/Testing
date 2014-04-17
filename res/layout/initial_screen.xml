@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000" >
+    
+    <Button
+        android:id="@+id/cnnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect to Arduino"
+        android:onClick="connectArduino" 
+        />
+    
+    <ToggleButton
+        android:id="@+id/waterflush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="Flush Water Port: Running"
+        android:textOff="Flush Water Port: Off"
+        android:layout_alignParentBottom = "true"
+        android:layout_alignParentRight = "true"
+        android:onClick="waterFlush"
+        />
+    
+        <Button
+        android:id="@+id/stage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stage_1"
+        android:onClick="stage1Start"
+        android:layout_below="@id/cnnt"
+        />
+
+        <Button
+        android:id="@+id/stage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stage_2"
+        android:onClick="stage2Start"
+        android:layout_below="@id/stage1"
+   		 />
+        
+        <Button
+        android:id="@+id/stage3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stage_3"
+        android:onClick="stage3Start"
+        android:layout_below="@id/stage2"
+        />
+        
+        <Button
+        android:id="@+id/stage4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stage_4"
+        android:onClick="stage4Start"
+        android:layout_below="@id/stage3"
+        />
+    	<Button
+        android:id="@+id/stage5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stage_5"
+        android:onClick="startStage5"
+        android:layout_below="@id/stage4"
+        />
+    
+    <Button 
+     	android:id="@+id/preferences"
+     	android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"   
+     	android:layout_above="@id/waterflush"
+     	android:layout_alignParentRight="true"
+     	android:text="Settings"
+     	android:onClick="openPreferences"
+     />
+    
+    <ToggleButton
+        android:id="@+id/stages_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="Click to Hide Help"
+        android:textOff="Need Help?"
+        android:layout_alignParentTop = "true"
+        android:layout_alignParentRight = "true"
+        android:onClick="stageHelp"
+    />
+    
+    <TextView
+        android:id="@+id/stages_info_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="5"
+        android:singleLine="false"
+        android:text="
+        S1: Timed Tone, Reward\n
+        S2: Timed Tone, 7 Windows, Reward\n
+        S3: 7 Windows, Reward\n
+        S4: 7 Windows,Reward, Initiation\n
+        S5: 2 Windows, Reward, Punishment, Initiation, Timeout"
+        android:visibility="invisible"
+        android:layout_below="@id/stages_info"
+        android:layout_alignParentRight="true"
+        android:textSize="26sp"
+    />
+    
+    <Button
+        android:id="@+id/link_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Link to Dropbox"/>
+    
+    <EditText
+        android:id="@+id/mouse_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:imeOptions="actionDone"
+        android:hint="Mouse Number:"
+        android:layout_below="@id/link_button"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        />
+    <EditText
+        android:id="@+id/exp_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:imeOptions="actionDone"
+        android:hint="Experiment Number:"
+        android:layout_below="@id/mouse_number"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        />
+        
+     <Button
+        android:id="@+id/create_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create File"
+        android:onClick="fileName"
+        android:layout_below="@id/exp_number"
+        android:layout_centerHorizontal="true"
+         />
+     <Button
+        android:id="@+id/unlink_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unlink Account"
+        android:onClick="unlinkAccount"
+        android:layout_below="@id/create_file"
+        android:layout_centerHorizontal="true"
+         />
+     
+</RelativeLayout>

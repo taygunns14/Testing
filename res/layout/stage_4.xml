@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stage4layoutouter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000" >
+    
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#000000"
+    android:id="@+id/stage4layoutinner">
+    
+	<Button
+        android:id="@+id/stage4but1"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:onClick="stage4Response"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_alignParentBottom = "true"
+        android:layout_alignParentLeft = "true"
+        />
+    
+     <Button
+        android:id="@+id/stage4but2"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:onClick="stage4Response"
+        android:layout_marginRight="25dp"
+        android:layout_alignParentBottom = "true"
+        android:layout_toRightOf = "@id/stage4but1"
+        />
+     <Button
+        android:id="@+id/stage4but3"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:onClick="stage4Response"
+        android:layout_marginRight="25dp"
+        android:layout_alignParentBottom = "true"
+        android:layout_toRightOf = "@id/stage4but2"
+        />
+     <Button
+        android:id="@+id/stage4but4"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:onClick="stage4Response"
+        android:layout_marginRight="25dp"
+        android:layout_alignParentBottom = "true"
+        android:layout_toRightOf = "@id/stage4but3"
+        />
+     <Button
+        android:id="@+id/stage4but5"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:onClick="stage4Response"
+        android:layout_marginRight="25dp"
+        android:layout_alignParentBottom = "true"
+        android:layout_toRightOf = "@id/stage4but4"
+        />
+        <Button
+        android:id="@+id/stage4but6"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:onClick="stage4Response"
+        android:layout_marginRight="25dp"        
+		android:layout_alignParentBottom = "true"
+		android:layout_toRightOf = "@id/stage4but5"
+        />
+        <Button
+        android:id="@+id/stage4but7"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:onClick="stage4Response"
+        android:layout_alignParentBottom = "true"
+        android:layout_toRightOf = "@id/stage4but6"
+        />
+        </RelativeLayout>
+        
+    	<Button
+        android:id="@+id/stopvideo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop = "true"  
+        android:layout_alignParentRight = "true" />
+
+<SurfaceView 
+	android:id="@+id/surfaceView" 
+	android:layout_width="1dp" 
+	android:layout_height="1dp">
+</SurfaceView>
+</RelativeLayout>

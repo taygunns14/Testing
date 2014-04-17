@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stage5layoutouter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#000000">
+    
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#000000"
+    android:id="@+id/stage5layoutinner">
+    <Button
+        android:id="@+id/stage5but1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:onClick="mousePoke"
+        android:layout_alignParentBottom = "true"
+        />
+        <Button
+        android:id="@+id/stage5but2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:onClick="mousePoke"
+        android:layout_alignParentRight = "true"
+		android:layout_alignParentBottom = "true"
+        />
+
+        </RelativeLayout>
+        <Button
+        android:id="@+id/stopvideo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop = "true"  
+        android:layout_alignParentRight = "true" />
+
+<SurfaceView 
+	android:id="@+id/surfaceView" 
+	android:layout_width="1dp" 
+	android:layout_height="1dp">
+</SurfaceView>
+</RelativeLayout>

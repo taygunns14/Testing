@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <PreferenceCategory
+        android:title="Arduino Controls">
+        
+        <EditTextPreference
+            android:key="reward_time"
+          	android:title="Reward Time"
+          	android:numeric="integer"
+          	android:defaultValue="250"
+          
+        />
+        <EditTextPreference
+            android:key="punishment_time"
+            android:title="Punishment Time"
+            android:numeric="integer"
+            android:defaultValue="3000"
+        />
+        <EditTextPreference 
+            android:key="punishment_pin"
+            android:title="Punishment Pin"
+            android:numeric="integer"
+            android:defaultValue="2"
+        />
+        
+        <EditTextPreference
+            android:key="reward_pin"
+            android:title="Reward Pin"
+            android:numeric="integer"
+            android:defaultValue="3"
+        />
+        
+        <EditTextPreference
+            android:key="input_pin"
+            android:title="Input Pin"
+            android:numeric="integer"
+            android:defaultValue="8"
+        />
+        <EditTextPreference
+        	android:key="early_stage_repeat_time"
+        	android:title="Early Stage Repeat Time"
+        	android:numeric="integer"
+        	android:defaultValue="30000"
+        />
+    </PreferenceCategory>
+        
+</PreferenceScreen>
